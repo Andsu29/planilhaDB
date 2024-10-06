@@ -1,0 +1,5 @@
+mysql_data
+venv
+/venv
+.env
+env
