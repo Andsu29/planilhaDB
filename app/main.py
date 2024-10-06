@@ -58,7 +58,7 @@ def dados():
       with connection.cursor() as cursor:
         query = "SELECT * FROM usuarios"
         cursor.execute(query)
-        cursor.commit()
+        connection.commit()
   except pymysql.MySQLError as e:
     return jsonify({"Erro ao buscar dados": e})
 
